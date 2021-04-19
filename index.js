@@ -8,7 +8,7 @@ module.exports = class extends Page {
     render(sPage) {
         const oJson = fetch("https://final-exam-e02a9-default-rtdb.firebaseio.com/meals.json").json();
         console.log(oJson);
-        let sResult = "<h1>Upcoming Popup Meals</h1>";
+        let sResult = "<h1>Stay at Home Kits</h1>";
         Object.keys(oJson).map((key) => {
             const oEntity = oJson[key];
             console.log(oEntity);
