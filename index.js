@@ -17,8 +17,6 @@ module.exports = class extends Page {
             <h2>${oEntity.title}</h2>
             <p><img src="${oEntity.featured_image}" alt="${oEntity.title}"</p>
             <p>${oEntity.full_description}</p>
-            <p>${oEntity.meal_date}</p>
-            <p>${oEntity.meal_location}</p>
             <p>${oEntity.meal_price}</p>
             <form action="https://localhost:3002/payment" method="post">
             <input type="hidden" name="title" value="${oEntity.title}" />
