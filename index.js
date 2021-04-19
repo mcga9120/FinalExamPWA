@@ -3,7 +3,7 @@ const Page = require("./_layout/Default");
 
 module.exports = class extends Page {
     constructor(){
-        super({title:"Home", sName:"Richard Hildred"});
+        super({title:"Home", sName:"Aurora McGaughey"});
     }
     render(sPage) {
         const oJson = fetch("https://final-exam-e02a9-default-rtdb.firebaseio.com/meals.json").json();
