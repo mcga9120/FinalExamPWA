@@ -20,7 +20,7 @@ module.exports = class extends Page {
             <p>${oEntity.meal_date}</p>
             <p>${oEntity.meal_location}</p>
             <p>${oEntity.meal_price}</p>
-            <form action="https://serene-taiga-04277.herokuapp.com/payment" method="post">
+            <form action="https://localhost:3002/payment" method="post">
             <input type="hidden" name="title" value="${oEntity.title}" />
             <input type="hidden" name="price" value="21" />
             <input type="tel" placeholder="enter your number" name="telephone"/>
